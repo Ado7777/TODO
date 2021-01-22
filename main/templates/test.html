@@ -32,17 +32,15 @@
                     <h4>{{ todo.text}}</h4>
                     </div>
                     <div class="todo_item_footer">
-                    <p>{{ todo.created_at}}<span>17:22</span></p>
+                    <p>{{ todo.created_at}}</p>
                     <div class="action_buttons">
-                        <img src="../TODO/icons/unmarked.png" />
-                        <img src="../TODO/icons/delete.png" />
+                        <img src="{% static './TODO/icons/unmarked.png' %}" />
+                        <img src="{% static './TODO/icons/delete.png' %}" />
                     </div>
                 </div>
-            </div>
-            {% endfor %}
-            </div>
+            </div>  
+        {% endfor %}
         </div>
-
     </section>
 </body>
 </html>
